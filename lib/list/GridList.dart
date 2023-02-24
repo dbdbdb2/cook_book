@@ -11,8 +11,7 @@ class GridList extends StatefulWidget {
 class _GridListState extends State<GridList> {
 
   Widget build(BuildContext context) => MaterialApp(
-    debugShowCheckedModeBanner: false,
-    
+
     home: Scaffold(
       backgroundColor: Colors.blue[200],
 
@@ -52,44 +51,50 @@ class _GridListState extends State<GridList> {
               padding: const EdgeInsets.all(8.0),
               child: Container(
                 color: Colors.blue[500],
-                child: Center(child: const Text('D', style: TextStyle(fontSize: 35))),
+                child: Center(child: const Icon(Icons.rocket, size: 50)),
               ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
                 color: Colors.blue[500],
-                child: Center(child: const Text('E', style: TextStyle(fontSize: 35))),
+                child: Center(child: const Icon(Icons.cake_rounded, size: 50)),
               ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
                 color: Colors.blue[500],
-                child: Center(child: const Text('F', style: TextStyle(fontSize: 35))),
+                child: Center(child: const Icon(Icons.airplanemode_on_outlined, size: 50)),
               ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
                 color: Colors.blue[500],
-                child: Center(child: const Text('G', style: TextStyle(fontSize: 35))),
+                  child: Center(child: const Image(image: NetworkImage('http://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/relieved-face.png'))
+                ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
                 color: Colors.blue[500],
-                child: Center(child: const Text('H', style: TextStyle(fontSize: 35))),
+                child: Center(child: const Image(
+                      image: NetworkImage('http://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/smiling-face.png')
+                ),),
               ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
                 color: Colors.blue[500],
-                child: Center(child: const Text('I', style: TextStyle(fontSize: 35))),
+                child: Center(child: const Image(
+                    image: NetworkImage('https://www.washingtonpost.com/wp-apps/imrs.php?src=http://www.washingtonpost.com/news/morning-mix/wp-content/uploads/sites/21/2015/11/face-with-tears-of-joy.png&w=1200')
+                ),),
               ),
             ),
+
           ],
 
         )
