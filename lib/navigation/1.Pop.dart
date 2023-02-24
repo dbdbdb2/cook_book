@@ -1,4 +1,3 @@
-import 'package:cook_book/actions/Route1.dart';
 import 'package:flutter/material.dart';
 
 class R1 extends StatelessWidget {
@@ -9,6 +8,7 @@ class R1 extends StatelessWidget {
     debugShowCheckedModeBanner: false,
 
     home: (Scaffold(
+      backgroundColor: Colors.blue[200],
       appBar: AppBar(
         centerTitle: true,
         title: const Text('ROUTE 1', style: TextStyle(fontSize: 40)),
@@ -17,12 +17,17 @@ class R1 extends StatelessWidget {
 
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.all(20),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(15)))
+              ),
               onPressed: () {
                 Navigator.pop(context);
               },
-              child: const Text('back', style: TextStyle(fontSize: 30)),
+              child: const Text('back', style: TextStyle(fontSize: 60)),
             ),
           ],
         ),
