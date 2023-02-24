@@ -71,7 +71,6 @@ class DetailScreen extends StatelessWidget {
   // Declare a field that holds the Todo.
   final Todo todo;
 
-  @override
   Widget build(BuildContext context) {
 
     // Use the Todo to create the UI.
