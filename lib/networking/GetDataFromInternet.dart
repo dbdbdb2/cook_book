@@ -68,7 +68,8 @@ class _HomePageState extends State<HomePage> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: Text("Http Get Request."),
+          centerTitle: true,
+          title: Text("Http Get Request", style: TextStyle(fontSize: 35)),
           leading: Icon(
             Icons.get_app,
           ),
