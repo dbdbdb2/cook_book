@@ -12,8 +12,8 @@ void main() {
 
 int currentSpeed(int speed) => speed;
 
+// uso SPEED ?
 // int breakk(int breakk) => currentSpeed(speed) - breakk;
-//
 // int speedUp(int speedUp) => currentSpeed(speed) + speedUp;
 
 
