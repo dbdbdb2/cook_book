@@ -5,12 +5,15 @@ import 'dart:io';
 import 'package:path_provider/path_provider.dart';
 import 'dart:async';
 
+// GET PATH TO STORE THE FILE
 Future<String> get _localPath async {
   final directory = await getApplicationDocumentsDirectory();
 
   return directory.path;
+
   }
 
+// REFERENCE TO THE LOCATION
 Future<File> get _localFile async {
   final path = await _localPath;
   return File('$path/counter.txt');
@@ -20,7 +23,7 @@ Future<File> get _localFile async {
 // WRITE
 _write(String text) async {
   final Directory directory = await getApplicationDocumentsDirectory();
-  final File file = File('${directory.path}/my_file.txt');
+  final File file = File('${directory.path}/file.txt');
   await file.writeAsString(text);
 }
 
@@ -31,7 +34,7 @@ Future<String?> _read() async {
 
   try {
     final Directory directory = await getApplicationDocumentsDirectory();
-    final File file = File('${directory.path}/my_file.txt');
+    final File file = File('${directory.path}/file.txt');
     text = await file.readAsString();
   }
 
