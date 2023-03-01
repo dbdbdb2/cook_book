@@ -1,18 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
-void main() => runApp(const MaterialApp(home: FlutterToast()));
+void main() => runApp(App());
 
-class FlutterToast extends StatefulWidget {
-  const FlutterToast({Key? key}) : super(key: key);
+class App extends StatelessWidget {
+  const App({Key? key}) : super(key: key);
 
-  @override
-  State<FlutterToast> createState() => _FlutterToastState();
+  Widget build(BuildContext context) => MaterialApp(
+    debugShowCheckedModeBanner: false,
+
+    home: (
+      Toast()
+    ),
+
+  );
+
 }
 
-class _FlutterToastState extends State<FlutterToast> {
+class Toast extends StatefulWidget {
+  const Toast({Key? key}) : super(key: key);
 
-  @override
+  State<Toast> createState() => _ToastState();
+}
+
+class _ToastState extends State<Toast> {
+
   Widget build(BuildContext context) => MaterialApp(
     debugShowCheckedModeBanner: false,
 
@@ -21,29 +33,46 @@ class _FlutterToastState extends State<FlutterToast> {
 
       appBar: AppBar(
         centerTitle: true,
-        title: const Text('FlutterToast', style: TextStyle(fontSize: 40)),
+        title: const Text('Toast', style: TextStyle(fontSize: 40)),
         backgroundColor: Colors.blue[900],
       ),
 
       body: Container(
         padding: const EdgeInsets.all(10),
 
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+
+              onPressed: () => Fluttertoast.showToast(
+                msg: "DBG",
+                toastLength: Toast.,
+              ),
+
+              child: const Text('TOAST', style: TextStyle(fontSize: 30)),
+
+            )
+          ],
+        ),
+
+
+
+      ),
+
+    ),
+
+  );
+
+}
+
+/*
+
+      body: Container(
+        padding: const EdgeInsets.all(10),
+
         child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              ElevatedButton(
 
-                onPressed: () => Fluttertoast.showToast(
-                  msg: "DBG",
-                  toastLength: Toast.LENGTH_LONG,
-                ),
-
-                child: const Text('TOAST', style: TextStyle(fontSize: 30)),
-
-              )
-            ],
-          ),
         ),
 
       ),
@@ -53,3 +82,4 @@ class _FlutterToastState extends State<FlutterToast> {
   );
 
 }
+*/
