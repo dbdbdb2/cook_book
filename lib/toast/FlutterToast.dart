@@ -37,29 +37,21 @@ class _ToastState extends State<Toast> {
         backgroundColor: Colors.blue[900],
       ),
 
-      body: Container(
-        padding: const EdgeInsets.all(10),
-
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ElevatedButton(
-
-              onPressed: () => Fluttertoast.showToast(
-                msg: "DBG",
-                toastLength: Toast.,
-              ),
-
-              child: const Text('TOAST', style: TextStyle(fontSize: 30)),
-
-            )
-          ],
+      body: Center(
+        child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            padding: EdgeInsets.all(20),
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.all
+              (Radius.circular(15)))
+          ),
+          onPressed: () {
+            Fluttertoast.showToast(
+              msg: "DBG"
+            );
+          },
+          child: const Text('TOAST', style: TextStyle(fontSize: 30)),
         ),
-
-
-
-      ),
-
+      )
     ),
 
   );
