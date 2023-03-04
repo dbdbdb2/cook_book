@@ -8,6 +8,8 @@ environment:
 
 dependencies:
 
+  cached_network_image: ^3.2.3
+
   path_provider:
 
   flutter:

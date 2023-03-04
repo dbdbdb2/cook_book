@@ -47,7 +47,7 @@ class _FabRowState extends State<FabRow> {
             onPressed: () => null,
             backgroundColor: Colors.green[900],
             tooltip: '3G',
-            child: const Icon(Icons.three_g_mobiledata),
+           child: const Icon(Icons.three_g_mobiledata),
           ),
           FloatingActionButton(
             onPressed: () => null,
