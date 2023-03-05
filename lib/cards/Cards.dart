@@ -8,7 +8,7 @@ class Cards extends StatelessWidget {
         backgroundColor: Colors.grey,
 
         appBar: AppBar(
-          title: Text('CARDS'),
+          title: Text('CARDS', style: TextStyle(fontSize: 35)),
           centerTitle: true,
         ),
 
