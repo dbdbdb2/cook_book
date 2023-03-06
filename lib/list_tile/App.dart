@@ -18,7 +18,7 @@ class App extends StatelessWidget {
       body: ListView.builder(
          itemCount: animals.length,
          itemBuilder: (BuildContext context, int i) => ListTile(
-           title: Text(animals[i]),
+           title: Text(animals[i], style: TextStyle(fontSize: 35)),
          ),
       )
     )),
