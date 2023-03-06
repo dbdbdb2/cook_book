@@ -25,19 +25,17 @@ class _CreateToastState extends State<CreateToast> {
 
         body: Center(
           child: ElevatedButton(
-            style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(20),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.all
-                  (Radius.circular(15)))
-            ),
-            onPressed: () {
-              Fluttertoast.showToast(
-                  msg: "DBG"
-              );
-            },
-            child: const Text('TOAST', style: TextStyle(fontSize: 30)),
+             style: ElevatedButton.styleFrom(
+               padding: EdgeInsets.all(20),
+               shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(15)))
+             ),
+             onPressed: () {
+
+             },
+             child: const Text('TOAST', style: TextStyle(fontSize: 30))
           ),
-        )
+        ),
+
     ),
 
   );
