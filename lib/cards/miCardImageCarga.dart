@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-Card miCardImageCarga() {
-  return Card(
+Card miCardImageCarga() =>
+  Card(
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
     margin: EdgeInsets.all(15),
     elevation: 10,
     child: Column(
-      children: <Widget>[
+      children: [
         FadeInImage(
           image: NetworkImage(
               'https://staticuestudio.blob.core.windows.net/buhomag/2016/03/01195417/pexels-com.jpg'),
@@ -21,4 +21,3 @@ Card miCardImageCarga() {
       ],
     ),
   );
-}
