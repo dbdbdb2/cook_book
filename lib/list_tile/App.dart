@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);
 
-  final animals = const ['Armadillo', 'Bear', 'Crocodrile', 'Elephan'];
+  final animals = const ['Armadillo', 'Bear', 'Crocodrile', 'Elephant'];
 
   Widget build(BuildContext context) => MaterialApp(
     debugShowCheckedModeBanner: false,
