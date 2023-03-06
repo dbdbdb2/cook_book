@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 Card miCardImageCarga() =>
   Card(
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
     margin: EdgeInsets.all(15),
     elevation: 10,
     child: Column(
