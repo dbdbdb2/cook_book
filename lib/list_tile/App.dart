@@ -9,6 +9,7 @@ class App extends StatelessWidget {
     debugShowCheckedModeBanner: false,
 
     home: (Scaffold(
+
       appBar: AppBar(
         centerTitle: true,
         title: const Text('App', style: TextStyle(fontSize: 40)),
@@ -18,7 +19,7 @@ class App extends StatelessWidget {
       body: ListView.builder(
          itemCount: animals.length,
          itemBuilder: (BuildContext context, int i) => ListTile(
-           title: Text(animals[i], style: TextStyle(fontSize: 35)),
+           title: Text(animals[i], style: TextStyle(fontSize: 55)),
          ),
       )
     )),

@@ -26,7 +26,6 @@ class ListViewSeparated extends StatelessWidget {
               leading: const Icon(Icons.sports_volleyball_sharp),
               title: Center(child: Text(laLiga[i])),
               trailing: const Icon(Icons.list),
-              
            ),
            separatorBuilder: (BuildContext context, int i) => const Divider(color: Colors.black, thickness: 1),
           ),

@@ -40,8 +40,9 @@ class Cards extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               TextButton(onPressed: () => {}, child: Text('Accept')),
-              TextButton(onPressed: () => {}, child: Text('Cancel'), style:
-              TextButton.styleFrom(foregroundColor: Colors.red),)
+              TextButton(onPressed: () => {}, child: Text('Cancel'),
+                  style: TextButton.styleFrom(foregroundColor: Colors.red)
+              )
             ],
           )
         ],
